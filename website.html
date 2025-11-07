@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Sai General Store - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff6b00 0%, #ff8c00 100%);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo h1 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .logo p {
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffe0b3;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('store-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+
+        .cta-button {
+            background-color: #ff6b00;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ff8c00;
+        }
+
+        .features {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .feature-card h3 {
+            font-size: 24px;
+            color: #ff6b00;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Om Sai General Store</h1>
+                <p>Bhopar Gaon, Dombivali</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Om Sai General Store</h2>
+        <p>Your Trusted Retailer in Bhopar Gaon</p>
+        <p>Quality Products at Best Prices | 10% Discount on Online Orders</p>
+        <a href="contact.html" class="cta-button">Contact Us Today</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <div class="icon">💰</div>
+            <h3>Best Prices</h3>
+            <p>All products sold at very competitive prices with regular discounts and offers</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">✅</div>
+            <h3>Quality Products</h3>
+            <p>We ensure all products meet high quality standards for customer satisfaction</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">🚚</div>
+            <h3>Quick Service</h3>
+            <p>Fast and efficient service with convenient shopping experience</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Om Sai General Store - Bhopar Gaon, Dombivali</p>
+        <p>Best Retailer Shop | Quality Products | Lowest Prices</p>
+    </footer>
+</body>
+</html>

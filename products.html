@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Om Sai General Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff6b00 0%, #ff8c00 100%);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo h1 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .logo p {
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffe0b3;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #ff6b00 0%, #ff8c00 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .page-header h2 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .products-content {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .category-section {
+            margin-bottom: 60px;
+        }
+
+        .category-section h3 {
+            font-size: 32px;
+            color: #ff6b00;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #ff6b00;
+            padding-bottom: 10px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h4 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .discount-banner {
+            background: linear-gradient(135deg, #ff6b00 0%, #ff8c00 100%);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin: 60px 0;
+            border-radius: 10px;
+        }
+
+        .discount-banner h3 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .discount-banner p {
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .page-header h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Om Sai General Store</h1>
+                <p>Bhopar Gaon, Dombivali</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="website.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <h2>Our Products</h2>
+        <p>Wide range of quality products at best prices</p>
+    </section>
+
+    <div class="products-content">
+        <div class="category-section">
+            <h3>Groceries & Food Items</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-icon">🌾</div>
+                    <h4>Rice & Grains</h4>
+                    <p>Premium quality rice, wheat, and various grains</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🥬</div>
+                    <h4>Fresh Vegetables</h4>
+                    <p>Daily fresh vegetables from local suppliers</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🍎</div>
+                    <h4>Fruits</h4>
+                    <p>Seasonal and fresh fruits available daily</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🥫</div>
+                    <h4>Canned Foods</h4>
+                    <p>Variety of canned and packaged food items</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🧈</div>
+                    <h4>Dairy Products</h4>
+                    <p>Milk, butter, cheese, and other dairy items</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🍝</div>
+                    <h4>Pasta & Noodles</h4>
+                    <p>Wide selection of pasta, noodles, and instant foods</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-section">
+            <h3>Personal Care & Hygiene</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-icon">🧼</div>
+                    <h4>Soaps & Handwash</h4>
+                    <p>Bathing soaps, handwash, and sanitizers</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🧴</div>
+                    <h4>Shampoos & Conditioners</h4>
+                    <p>Hair care products from leading brands</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🪒</div>
+                    <h4>Shaving Products</h4>
+                    <p>Razors, shaving cream, and aftershave</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🪥</div>
+                    <h4>Oral Care</h4>
+                    <p>Toothpaste, toothbrush, and mouthwash</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-section">
+            <h3>Household Essentials</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-icon">🧹</div>
+                    <h4>Cleaning Supplies</h4>
+                    <p>Detergents, floor cleaners, and disinfectants</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🍽️</div>
+                    <h4>Kitchen Items</h4>
+                    <p>Utensils, containers, and kitchen accessories</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">💡</div>
+                    <h4>Electrical Items</h4>
+                    <p>Bulbs, batteries, and small electrical goods</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🧺</div>
+                    <h4>Storage Solutions</h4>
+                    <p>Boxes, baskets, and storage containers</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-section">
+            <h3>Snacks & Beverages</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-icon">🍪</div>
+                    <h4>Biscuits & Cookies</h4>
+                    <p>Wide variety of biscuits and cookies</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🥤</div>
+                    <h4>Soft Drinks</h4>
+                    <p>Cold drinks, juices, and beverages</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🍿</div>
+                    <h4>Chips & Namkeen</h4>
+                    <p>Variety of chips, namkeen, and snacks</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">☕</div>
+                    <h4>Tea & Coffee</h4>
+                    <p>Premium tea leaves, coffee powder, and instant coffee</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-section">
+            <h3>Stationery & Miscellaneous</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-icon">📓</div>
+                    <h4>Notebooks & Registers</h4>
+                    <p>School and office notebooks of all sizes</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">✏️</div>
+                    <h4>Pens & Pencils</h4>
+                    <p>Writing instruments for all purposes</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">📱</div>
+                    <h4>Mobile Accessories</h4>
+                    <p>Chargers, earphones, and phone covers</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🔋</div>
+                    <h4>Batteries</h4>
+                    <p>All types and sizes of batteries</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="discount-banner">
+            <h3>Special Offer!</h3>
+            <p>Get 10% discount on all online orders</p>
+            <p>Visit us today and avail the best prices in town!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Om Sai General Store - Bhopar Gaon, Dombivali</p>
+        <p>Best Retailer Shop | Quality Products | Lowest Prices</p>
+    </footer>
+</body>
+</html>
